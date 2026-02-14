@@ -102,14 +102,16 @@ function createProjectList(objects, categoryFilter) {
 				iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
 				iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
 				iframe.setAttribute("allowfullscreen", "");
+				let style = "border: none;";
 				if (item.portrait) {
-					iframe.setAttribute("width", 505);
-					iframe.setAttribute("height", 800);
+					style += "width: var(--video-width-p);";
+					style += "height: var(--video-height-p);";
 				}
 				else {
-					iframe.setAttribute("width", 994);
-					iframe.setAttribute("height", 559);
+					style += "width: var(--video-width-l);";
+					style += "height: var(--video-height-l);";
 				}
+				iframe.setAttribute("style", style);
 				modalFigure.appendChild(iframe);
 
 				modalTitle.innerHTML = item.title;
