@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="keywords" content="portfolio, 3d, blender">
+		<title>Hypoxia/DieAnonDie Portfolio</title>
+		<link rel="shortcut icon" href="#">
+		<link rel="stylesheet" href="./assets/css/style.css">
+	</head>
+	<body>
+		<main>
+			<!-- SIDEBAR -->
+			<aside class="sidebar" data-sidebar>
+				<div class="sidebar-info">
+					<figure class="profile-box">
+						<img src="./assets/images/profile.jpg" alt="Hypoxia/DieAnonDie" width="80">
+					</figure>
+					<div class="info-content">
+						<h1 class="name" title="Hypoxia/dieanondie">Hypoxia (@DieAnonDie)</h1>
+						<p class="title">3D Artist</p>
+					</div>
+				</div>
+				<div class="sidebar-info_more">
+					<div class="separator"></div>
+					<ul class="social-list">
+						<li class="social-item">
+							<a href="https://www.youtube.com/@DieAnonDie" class="social-link">
+								<ion-icon name="logo-youtube"></ion-icon>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://x.com/DieAnonDie" class="social-link">
+								<ion-icon name="logo-x"></ion-icon>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://github.com/dieanondie" class="social-link">
+								<ion-icon name="logo-github"></ion-icon>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.instagram.com/DieAnonDie" class="social-link">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<!-- MAIN -->
+			<div class="main-content">
+				<!-- ABOUT -->
+				<div class="about active" data-page="about">
+					<header>
+						<h2 class="h2 article-title">About</h2>
+					</header>
+					<section class="about-text">
+						<p>
+							Hi, wellcome to my 3D art portfolio.
+
+							I created all these 3D models over the last 5 years as a hobby using Blender, and I've decided to release them for free under the <a class="link" href="https://creativecommons.org/licenses/by/4.0/" class="news-link" overflow-wrap: break-word;>CC-BY 4.0 Attribution License</a>.
+						</p>
+						<ul>
+							<li>
+								<i>"Sounds like a good deal, but where is the catch?"</i>
+								<p>There is no catch, you can do whatever you want with them as long as you give me credit for the models. Just take into account that some of the turntable blend files might include assets that are not mine, so please check the LICENSE/README of those files before using them. Also, maybe I won't upload some of the turntable blend files if those include non free models.</p>
+							</li>
+							<li>
+								<i>"I want to support your job, how can I do that?"</i>
+								<p>I haven't planned to create any kind of Patreon account or anything like that. This is just a hobby, your support on social media is more than enough.</p>
+							</li>
+							<li>
+								<i>"This portfolio looks so cool, how can I create one?"</i>
+								<p>Just fork this project on GitHub.</p>
+							</li>
+						</ul>
+						<p>
+							If you want more information, or simply you want to share with me your creations, you can always contact me through my social media (I recommend contacting me through X since It's where I'm active the most).
+						</p>
+					</section>
+				</div>
+				<!-- PORTFOLIO -->
+				<div class="portfolio" data-page="portfolio">
+					<header>
+						<h2 class="h2 article-title">Portfolio</h2>
+					</header>
+					<section class="projects">
+						<ul id="filter-list" class="filter-list">
+						</ul>
+						<ul id="project-list" class="project-list">
+						</ul>
+					</section>
+				</div>
+				<div class="modal-container" data-modal-container>
+					<div class="overlay" data-overlay></div>
+					<section class="items-modal">
+						<button class="modal-close-btn" data-modal-close-btn>
+							<ion-icon name="close-outline"></ion-icon>
+						</button>
+						<div class="modal-content">
+							<h3 data-modal-title class="project-title"></h3>
+							<figure data-modal-figure></figure>
+							<p data-modal-description></p>
+							<p data-modal-date></p>
+							<p data-modal-category></p>
+							<div class="modal-content-button">
+								<button class="modal-download-btn" data-modal-download-btn>
+									Download
+								</button>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<script src="./assets/js/script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
