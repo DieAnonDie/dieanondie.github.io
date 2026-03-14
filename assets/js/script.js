@@ -185,6 +185,10 @@ function createCategories(categories) {
 	lastClickedBtn.classList.add("active");
 }
 
+function toggleActive(element) {
+	element.classList.toggle("active");
+}
+
 async function create() {
 	const read = await readCSV();
 	if (read) {
@@ -192,7 +196,12 @@ async function create() {
 		createCategories(categories);
 	}
 
-	// add click event to modal close button
+	// Add click event to the sidebar button
+	const sidebar = document.querySelector("[data-sidebar]");
+	const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+	sidebarBtn.addEventListener("click", function () { toggleActive(sidebar); });
+
+	// Add click event to the modal close button
 	const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 	modalCloseBtn.addEventListener("click", toggleModal);
 
